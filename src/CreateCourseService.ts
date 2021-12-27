@@ -1,0 +1,6 @@
+
+
+
+class CreateCourseService {
+  execute()
+}
