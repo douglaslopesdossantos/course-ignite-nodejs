@@ -5,6 +5,6 @@ const app = express();
 const port = process.env.PORT || 3333
 
 app.use(express.json());
-app.use(categoriesRoutes)
+app.use('/categories',categoriesRoutes)
 
 app.listen(port, () => console.log(`server is running! ${port}`))
