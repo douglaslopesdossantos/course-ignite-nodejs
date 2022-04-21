@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  database_paradadosparafusos:
+    image: postgres
+    container_name: banco_ignite
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=ignite_user
+      - POSTGRES_PASSWORD=ignite_password
+      - POSTGRES_DB=ignite_db
+    volumes:
+      - pgdata:/data/postgres
+volumes:
+  pgdata:
+    driver: local
